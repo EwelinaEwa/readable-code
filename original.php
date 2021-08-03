@@ -7,7 +7,7 @@ $type = $pizzatype;
 echo 'Creating new order... <br>';
 $toPrint = 'A ';
  $toPrint .= $pizzatype;
-$p = calc_cts($type);
+$p = calculatePrice($type);
 
     $address = 'unknown';
     if($fw == 'koen')
@@ -68,15 +68,15 @@ function calc_cts($p_type)
             function ordr_piz_all()
             {
             $test= 0;
-            ordr_pz('calzone', 'koen');
-            ordr_pz('marguerita', 'manuele');
+            pizzaOrder('calzone', 'koen');
+            pizzaOrder('marguerita', 'manuele');
 
-            ordr_pz('golden', 'students');
+            pizzaOrder('golden', 'students');
             }
 
 function make_Allhappy($do_it) {
 if ($do_it) {
-        ordr_piz_all();
+        pizzaOrders();
     } else {
         // Should not do anything when false
     }
