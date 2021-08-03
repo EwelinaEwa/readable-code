@@ -18,9 +18,9 @@ function pizzaOrder($pizzaType, $orderedBy)
 {
     if ($orderedBy == 'koen') {
         $address = 'a yacht in Antwerp';
-    } elseif ($orderedBy == 'manuele') {
+    } if ($orderedBy == 'manuele') {
         $address = 'somewhere in Belgium';
-    } elseif ($orderedBy == 'students') {
+    } if ($orderedBy == 'students') {
         $address = 'BeCode office';
     }
 
