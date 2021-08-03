@@ -45,4 +45,10 @@ function pizzaOrders()
     pizzaOrder('golden', 'students');
 }
 
-pizzaOrders();
+function prepareOrders($preparePizza) {
+    if ($preparePizza) {
+        pizzaOrders();
+    }
+}
+
+prepareOrders(true);
