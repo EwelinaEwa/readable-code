@@ -32,8 +32,8 @@ function pizzaOrder($pizzaType, $orderedBy)
     echo '<br>';
     echo 'The address: ' . $address . '.';
     echo '<br>';
-    echo 'The bill is €' . $totalPrice;
-    echo '.<br>';
+    echo 'The bill is €' . $totalPrice . '.';
+    echo '<br>';
     echo 'Order finished.';
     echo '<br><br>';
 }
